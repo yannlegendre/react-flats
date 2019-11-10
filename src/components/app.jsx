@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div>
         <FlatList flats={flats} />
-        <GoogleMapReact />
+        <div className="map-container">
+          <GoogleMapReact defaultCenter={{ lat: 45.75, lng: 4.85 }} defaultZoom={13} />
+        </div>
       </div>
     );
   }
